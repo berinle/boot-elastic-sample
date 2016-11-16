@@ -11,7 +11,7 @@ import java.util.List;
  * @since 2/28/15 1:56 PM
  *        User: Sezin Karli
  */
-public interface MovieRepository extends ElasticsearchRepository<Movie, Long> {
+public interface MovieRepository extends ElasticsearchRepository<Movie, String> {
     public List<Movie> findByName(String name);
 
     public List<Movie> findByRatingBetween(Double beginning, Double end);
